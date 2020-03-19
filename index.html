@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://wikicdn.web.app/css/main.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .link {
+            padding-top: 10px !important;
+            display: inline-block;
+        }
+
+        .box {
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1 class="center">Sql Abfragen für Bundesliga : </h1>
+
+        <br><br><br>
+        <a href="#1" class="link">Aufgabe 1</a><br>
+        <a href="#2" class="link">Aufgabe 2</a><br>
+        <a href="#3" class="link">Aufgabe 3</a><br>
+        <a href="#4" class="link">Aufgabe 4</a><br>
+        <a href="#5" class="link">Aufgabe 5</a><br>
+    </div>
+
+    <div class="box" id="1">
+        <h3>Python:</h3>
+        <iframe src="https://trinket.io/embed/python3/db2195f344" width="100%" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <br>
+        <h3>Sql: </h3>
+        <div class="box-code">
+            <p>Select * <br>From Verein; </p>
+        </div>
+    </div>
+
+    <div class="box" id="2">
+        <h3>Python:</h3>
+        <iframe src="https://trinket.io/embed/python3/3dc03a6c16" width="100%" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <br>
+        <h3>Sql: </h3>
+        <div class="box-code">
+            <p>Select * <br>From Verein <br> Where Liga = 1;</p>
+        </div>
+    </div>
+
+    <div class="box" id="3">
+        <h3>Python:</h3>
+        <iframe src="https://trinket.io/embed/python3/1f50bd16e2" width="100%" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <br>
+        <h3>Sql: </h3>
+        <div class="box-code">
+            <p>Select MIN(Erstaustragung)<br>
+                From Liga<br>
+                Order by Erstaustragung</p>
+        </div>
+    </div>
+    <div class="box" id="4">
+        <h3>Python:</h3>
+        <iframe src="https://trinket.io/embed/python3/0131b21e9e" width="100%" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <br>
+        <h3>Sql: </h3>
+        <div class="box-code">
+            <p>Select Liga_NR, Verband, Rekordspieler<br>
+                From Liga</p>
+        </div>
+    </div>
+    <div class="box" id="5">
+        <h3>Result:</h3>
+        <div class="box-code">
+            <p>
+                Liga_Nr Erstaustragung Meister<br>
+                1 1963-08-24<br>
+                2 1974-08-02<br>
+                <span>//Aufgabe ist sinnlos?!?</span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
