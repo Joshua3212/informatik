@@ -62,7 +62,7 @@
         <br>
         <h3>Sql: </h3>
         <div class="box-code">
-            <p>Select * <br>From Verein <br> Where Liga = 1;</p>
+            <p>Select Name <br>From Verein <br> Where Liga = 1;</p>
         </div>
     </div>
 
@@ -108,8 +108,11 @@
         <br>
         <h3>Sql: </h3>
         <div class="box-code">
-            <p>SELECT Max(Datum) <br>
-                FROM Spiel</p>
+            <p>
+                SELECT Datum<br>
+FROM Spiel<br>
+WHERE Spieltag = 1;
+            </p>
         </div>
     </div>
 
@@ -120,12 +123,10 @@
         <br>
         <h3>Sql: </h3>
         <div class="box-code">
-            <p>Select Spieler_Name<br>
-                From Spieler<br>
-                Where Spieler_Name = (SELECT Rekordspieler
-                <p class="indent2" style="margin-left: 170px;">FROM Liga)</p><br>
-                <span>//sollte funktionieren. Nicht getestet!</span>
-            </p>
+            <p>
+            SELECT SUM(Spiele_Rekordspieler)<br>
+FROM Liga;
+</p>
         </div>
     </div>
 
@@ -149,7 +150,7 @@
         <br>
         <h3>Sql: </h3>
         <div class="box-code">
-            <p>Select Trikot_Nr AS Anzahl<br>
+            <p>Select count(*) AS Anzahl<br>
                 From Spieler<br>
                 Where Trikot_Nr = 12
                 <br><br><span>//sollte funktionieren. Nicht getestet!</span>
